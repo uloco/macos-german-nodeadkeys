@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.german_nodeadkeys</string>
+	<string>org.sil.ukelele.keyboardlayout.german-nodeadkey</string>
 	<key>CFBundleName</key>
 	<string>German_NoDeadKeys</string>
 	<key>CFBundleVersion</key>
@@ -12,8 +12,10 @@
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
+		<key>TISIconIsTemplate</key>
+		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.german_nodeadkeys.german-nodeadkeys</string>
+		<string>org.sil.ukelele.keyboardlayout.german-nodeadkey.german-nodeadkeys</string>
 		<key>TISIntendedLanguage</key>
 		<string>de</string>
 	</dict>
