@@ -12,7 +12,8 @@ cd macos-german-nodeadkeys
 ./install.sh
 ```
 
-Then reboot and select _German - No Dead Keys_ in System Settings > Keyboard > Input Sources.
+The script installs the bundle and registers the layout in your enabled input sources.
+Log out and back in (or reboot) and select _German - No Dead Keys_ in System Settings > Keyboard > Input Sources.
 
 ### Manual installation
 
@@ -22,8 +23,9 @@ Then reboot and select _German - No Dead Keys_ in System Settings > Keyboard > I
    ```bash
    xattr -dr com.apple.quarantine ~/Library/Keyboard\ Layouts/German_NoDeadKeys.bundle
    ```
-4. Reboot
-5. Open System Settings and select _German - No Dead Keys_
+4. Open `~/Library/Preferences/com.apple.HIToolbox.plist` and add _German - No Dead Keys_ to the _AppleEnabledInputSources_ array
+5. Log out and back in (or reboot)
+6. Open System Settings and select _German - No Dead Keys_
 
 > **Note:** Since macOS Sequoia (15), Apple blocks unsigned/unnotarized bundles that
 > carry a quarantine attribute. Keyboard layout bundles are loaded silently by the
@@ -37,7 +39,7 @@ but there is another way.
 
 1. `open ~/Library/Preferences/com.apple.HIToolbox.plist`
 2. Remove it from the _AppleEnabledInputSources_ entry
-3. Reboot
+3. Log out and back in (or reboot)
 
 
 Have fun! :)
