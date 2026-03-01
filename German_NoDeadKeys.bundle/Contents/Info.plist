@@ -13,7 +13,7 @@
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
 		<key>TISIconIsTemplate</key>
-		<false/>
+		<true/>
 		<key>TISInputSourceID</key>
 		<string>org.sil.ukelele.keyboardlayout.german-nodeadkey.german-nodeadkeys</string>
 		<key>TISIntendedLanguage</key>
