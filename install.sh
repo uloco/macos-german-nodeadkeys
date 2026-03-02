@@ -44,4 +44,7 @@ else
 	fi
 fi
 
+killall TextInputMenuAgent 2>/dev/null || true
+killall SystemUIServer 2>/dev/null || true
+
 echo "Done. Please log out and log back in. Then, select '$LAYOUT_NAME' in System Settings > Keyboard > Input Sources and we are good to go. Have fun!"
